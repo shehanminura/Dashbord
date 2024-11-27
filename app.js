@@ -1,134 +1,122 @@
 let month =[
     {
-        MName:"J",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:5000,
+        Food:4009,
+        Health:433,
+        Transportation:500,
+        Other:1500,
+        income:15000,
+        saveing:7500
 
     },
     {
-        MName:"f",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:505,
+        Food:400,
+        Health:9004,
+        Transportation:440,
+        Other:150,
+        income:20000,
+        saveing:5300
 
     },
     {
-        MName:"m",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:505,
+        Food:409,
+        Health:404,
+        Transportation:240,
+        Other:150,
+        income:35000,
+        saveing:5000
 
     },
     {
-        MName:"a",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:600,
+        Food:495,
+        Health:2000,
+        Transportation:2004,
+        Other:9504,
+        income:36000,
+        saveing:1500
 
     },
     {
-        MName:"may",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:550,
+        Food:4090,
+        Health:5500,
+        Transportation:2400,
+        Other:1500,
+        income:44000,
+        saveing:20000
 
     },
     {
-        MName:"Juni",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:550,
+        Food:490,
+        Health:4400,
+        Transportation:240,
+        Other:10500,
+        income:19000,
+        saveing:6500
 
     },
     {
-        MName:"July",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:850,
+        Food:409,
+        Health:4400,
+        Transportation:2400,
+        Other:15000,
+        income:77000,
+        saveing:56000
 
     },
     {
-        MName:"a",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:5500,
+        Food:490,
+        Health:440,
+        Transportation:2400,
+        Other:1500,
+        income:15000,
+        saveing:9000
 
     },
     {
-        MName:"s",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:5500,
+        Food:4900,
+        Health:4400,
+        Transportation:24000,
+        Other:15000,
+        income:88000,
+        saveing:50000
 
     },
     {
-        MName:"o",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:5700,
+        Food:4700,
+        Health:440,
+        Transportation:2004,
+        Other:1500,
+        income:19000,
+        saveing:60000
 
     },
     {
-        MName:"n",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:800,
+        Food:4900,
+        Health:4040,
+        Transportation:24000,
+        Other:15000,
+        income:39000,
+        saveing:10000
 
     },
     {
-        MName:"d",
-        Entertainment:55,
-        Food:49,
-        Health:44,
-        Transportation:24,
-        Other:15,
-        income:150000,
-        saveing:75000
+        Entertainment:505,
+        Food:490,
+        Health:4400,
+        Transportation:2400,
+        Other:1500,
+        income:80000,
+        saveing:30000
 
     }, 
 ]
@@ -258,6 +246,43 @@ new Chart("tmyChart", {
     }
   }
 });
+
+
+
+///// newRecent transactions list
+
+
+
+
+function addFrom() {
+    let fEntertainment = Number(document.getElementById("Entertainmentform").value);
+    let fFood = Number(document.getElementById("Foodform").value);
+    let fHealth = Number(document.getElementById("Healthform").value);
+    let fTransportation = Number(document.getElementById("Transportationform").value);
+    let fOther = Number(document.getElementById("Otherform").value);
+    let fincome = Number(document.getElementById("incomeform").value);
+    let fsaveing = Number(document.getElementById("saveingform").value);
+
+    month.push({
+        Entertainment: fEntertainment,
+        Food: fFood,
+        Health: fHealth,
+        Transportation: fTransportation,
+        Other: fOther,
+        income: fincome,
+        saving: fsaveing
+    });
+}
+
+console.log(month);
+
+
+
+
+
+
+
+
 
 ///// Recent transactions list
 

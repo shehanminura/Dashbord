@@ -237,7 +237,7 @@ new Chart("bmyChart", {
 
 
 
-const txValues = ["Italy", "France"];
+const txValues = ["Income", "Saveing"];
 const tyValues = [totincome, totsaveing, 0];
 const tbarColors = ["red", "green"];
 
@@ -259,5 +259,35 @@ new Chart("tmyChart", {
   }
 });
 
+///// Recent transactions list
 
+document.getElementById("btnAddTask").addEventListener("click", addTask);
+let taskList=[];
+
+
+function addTask() {
+    let txtTask = document.getElementById("txtTask").value;
+    let txtamount = document.getElementById("txtamount").value;
+    if(txtTask.length!=0){
+    taskList.push(`<li class="list-group-item">
+                       <label class="form-check-label stretched-link">${txtTask} - ${txtamount}</label>
+                     </li>`);
+
+    loadTasks();
+    clearTxt();
+    }
+}
+function loadTasks(){
+    let listBody="";
+    
+    taskList.forEach(task=>{
+        listBody+=task;
+    });
+    document.getElementById("uList").innerHTML=listBody;
+}
+
+function clearTxt(){
+    document.getElementById("txtTask").value = '';
+    document.getElementById("txtamount").value='';
+}
 

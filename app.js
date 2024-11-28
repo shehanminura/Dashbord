@@ -148,8 +148,8 @@ let ptotTransportation=(totTransportation/12);
 let ptotOther=(totOther/12);
 
     document.getElementById("incomebox").innerHTML=`
-                      <h4  style="margin: 10%;">YEAR INCOME- ${totincome}</h4>
-                      <h4  style="margin: 10%;">Try to Saveing- ${totsaveing}</h4>
+                      <h4  style="margin: 10%; color:white;">YEAR'S INCOME - ${totincome}</h4>
+                      <h4  style="margin: 10%; color:white;">SAVING - ${totsaveing}</h4>
     `
 
     const xValues = ["Entertainment", "Food", "Health", "Transportation", "Other"];
@@ -250,9 +250,6 @@ new Chart("tmyChart", {
 
 
 ///// newRecent transactions list
-
-
-
 
 function addFrom() {
     let fEntertainment = Number(document.getElementById("Entertainmentform").value);

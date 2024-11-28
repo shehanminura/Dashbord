@@ -10,13 +10,13 @@
 <body>
     <div class="sidebar">
         <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#spending">Spending line graph</a>
+        <a href="#list">transactions list</a>
+        
       </div>
       
-      <div class="content">
-       <div> <center><h1>Personal Budget Tracker</h1></center>
+      <div class="content" id="home">
+       <div> <center><h1 style="padding: 2%;">Personal Budget Tracker</h1></center>
         </div>
         <div class="container">
             <div class="row">
@@ -31,7 +31,7 @@
                 
               <div class="w-100"></div>
               <div class="col">
-                <center><h4 style="margin: 6%;">Monthly spending line graph</h4></center>
+                <center><h4 style="margin: 6%;" id="spending">Monthly spending line graph</h4></center>
                 <canvas id="bmyChart" style="width:100%;max-width:600px"></canvas>
             </div>
               <div class="col">
@@ -43,9 +43,9 @@
           </div>
 
 
-          <div class="container">
+          <div class="container" id="list">
             <div class="row">
-                <center><h4 style="margin: 6%;">Recent transactions list</h4></center>
+                <center><h4 style="margin: 3%;">Recent transactions list</h4></center>
               <div class="col" style="background-color: beige; padding: 3%; border-radius: 5%;" >
                 <form>
                     <div class="form-row" >
@@ -83,7 +83,7 @@
                   </form> 
               </div>
               <div class="col">
-                2 of 2
+              
               </div>
             </div>
 
@@ -100,7 +100,7 @@
 
           <div class="container">
             <div class="row">
-                <center><h4 style="margin: 6%;">Recent transactions list</h4></center>
+                <center><h4 style="margin: 2%;">Recent transactions list</h4></center>
               <div class="col">
            
                   <ul class="list-group" id="uList">
